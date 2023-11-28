@@ -1,5 +1,24 @@
-# 💫 About Me:
-Soy un programador full stack con 2anos de experiencia, con un enfoque en el desarrollo web y móvil. También tengo experiencia en marketing y SEO, y estoy familiarizado con las últimas tendencias tecnológicas.<br><br>Soy un profesional motivado y con capacidad de trabajo en equipo, con un fuerte compromiso con la calidad y la excelencia. Tengo una gran capacidad de aprendizaje y adaptación, y estoy siempre dispuesto a asumir nuevos retos.<br><br>Experiencia<br><br>2019- Freelance<br><br>Desarrollo de aplicaciones web y móviles utilizando tecnologías como React, Node.js, Angular,javascript.<br>Trabajo en equipo para el desarrollo de proyectos complejos<br>Participación en la estrategia de marketing y SEO de la empresa<br><br>Educación<br>2023<br>4GeeksAcademy https://4geeks.com/ - Full Stacksoftware Developer<br><br>Lenguajes de programación: JavaScript, Python.<br>Frameworks: React, Node.js, Bootstrap, Flask, Angular.<br>Bases de datos: MySQL, PostgreSQL, MongoDB<br>Herramientas de desarrollo: Git, GitHub, Jira.<br>Marketing: SEO, SEM, PPC, email marketing.<br><br><br><h2>Contacto</h2><br><br>LinkedIn: https://www.linkedin.com/in/jerangel1/<br>GitHub: https://github.com/jerangel1<br>Portfolio : https://jerangel1.github.io/Portfolio/<br><br><br>Si estás buscando un programador full stack con experiencia en marketing y SEO, no dudes en contactarme. Estoy seguro de que puedo aportar un gran valor a tu equipo.<br>
+# ⌨ About Me:
+I am a full-stack developer with 2 years of experience, with a focus on web and mobile development. I also have experience in marketing and SEO, and I am familiar with the latest technological trends.<br><br>I am a motivated and team-oriented professional, with a strong commitment to quality and excellence. I have a great ability to learn and adapt, and I am always willing to take on new challenges.
+
+<br><br><ul><h2>Experience</h2><br>
+<li> 2019 - Freelancer<br><br>
+Desarrollo de aplicaciones web y móviles utilizando tecnologías como React, Node.js, Angular,javascript.
+<br>Trabajo en equipo para el desarrollo de proyectos complejos
+<br>Participación en la estrategia de marketing y SEO de la empresa<br>
+</ul>
+
+<br><h2>Educación</h2>
+<br>2023<br><a href="https://4geeks.com/ ">4GeeksAcademy</a> - Full Stack Software Developer
+<br>
+
+<br>Lenguajes de programación: JavaScript, CSS, Angular.
+<br>Frameworks: React, Node.js, Bootstrap, Flask, Angular.
+<br>Bases de datos: MySQL, PostgreSQL, MongoDB
+<br>Herramientas de desarrollo: Git, GitHub, Jira.
+<br>Marketing: SEO, SEM, PPC, email marketing.<br>
+
+<br><h2>Contacto</h2><br><br>LinkedIn: https://www.linkedin.com/in/jerangel1/<br>GitHub: https://github.com/jerangel1<br>Portfolio : https://jerangel1.github.io/Portfolio/<br><br><br>Si estás buscando un programador full stack con experiencia en marketing y SEO, no dudes en contactarme. Estoy seguro de que puedo aportar un gran valor a tu equipo.<br>
 
 
 ## 🌐 Socials:
