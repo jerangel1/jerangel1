@@ -1,25 +1,36 @@
-# ⌨ About Me:
+# ⌨ About Me ...
 I am a full-stack developer with 2 years of experience, with a focus on web and mobile development. I also have experience in marketing and SEO, and I am familiar with the latest technological trends.<br><br>I am a motivated and team-oriented professional, with a strong commitment to quality and excellence. I have a great ability to learn and adapt, and I am always willing to take on new challenges.
 
-<br><br><ul><h2>Experience</h2><br>
-<li> 2019 - Freelancer<br><br>
-Desarrollo de aplicaciones web y móviles utilizando tecnologías como React, Node.js, Angular,javascript.
-<br>Trabajo en equipo para el desarrollo de proyectos complejos
-<br>Participación en la estrategia de marketing y SEO de la empresa<br>
+<h2>Experience</h2>
+<ul><h3><i>2019 - 2022 -> Freelance</i></h3>
+  <li> Web and mobile application development using technologies such as React, Node.js, Angular, and JavaScript.
+  <li>Teamwork for the development of complex projects.</li>
+  <li>Participation in the company's marketing and SEO strategy.</li>
 </ul>
 
-<br><h2>Educación</h2>
-<br>2023<br><a href="https://4geeks.com/ ">4GeeksAcademy</a> - Full Stack Software Developer
-<br>
+<h2>Education</h2>
+<h3> May 2023 </h3>
+<ul><li><a href="https://4geeks.com/ "> 4GeeksAcademy</a> - Full Stack Software Developer </li>
+</ul>
 
-<br>Lenguajes de programación: JavaScript, CSS, Angular.
-<br>Frameworks: React, Node.js, Bootstrap, Flask, Angular.
-<br>Bases de datos: MySQL, PostgreSQL, MongoDB
-<br>Herramientas de desarrollo: Git, GitHub, Jira.
-<br>Marketing: SEO, SEM, PPC, email marketing.<br>
+<h2>🌟 Top Skils 🌟</h2>
+<ul>
+<li>Programming Languages: JavaScript, CSS, Angular</li>
 
-<br><h2>Contacto</h2><br><br>LinkedIn: https://www.linkedin.com/in/jerangel1/<br>GitHub: https://github.com/jerangel1<br>Portfolio : https://jerangel1.github.io/Portfolio/<br><br><br>Si estás buscando un programador full stack con experiencia en marketing y SEO, no dudes en contactarme. Estoy seguro de que puedo aportar un gran valor a tu equipo.<br>
+<li>Frameworks: React, Node.js, Bootstrap, Flask, Angular</li>
 
+<li>Databases: MySQL, PostgreSQL, MongoDB </li>
+
+<li>Development Tools: Git, GitHub, Jira </li>
+
+<li>Marketing: SEO, SEM, PPC, email marketing</li>
+</ul>
+
+<h2>Contacto</h2>
+Portfolio : https://jerangel1.github.io/Portfolio/<br>
+Mail 📧 : Jerangel1691@gmail.com
+<br><br>
+<i>If you are looking for a full-stack developer with experience in marketing and SEO, please do not hesitate to contact me. I am confident that I can add great value to your team.</i>
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/Jerangel1) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Jerangel1) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/Jerangel1) 
