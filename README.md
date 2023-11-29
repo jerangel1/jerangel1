@@ -1,17 +1,5 @@
 # ⌨ About Me ...
-I am a full-stack developer with 2 years of experience, with a focus on web and mobile development. I also have experience in marketing and SEO, and I am familiar with the latest technological trends.<br><br>I am a motivated and team-oriented professional, with a strong commitment to quality and excellence. I have a great ability to learn and adapt, and I am always willing to take on new challenges.
-
-<h2>Experience</h2>
-<ul><h3><i>2019 - 2022 -> Freelance</i></h3>
-  <li> Web and mobile application development using technologies such as React, Node.js, Angular, and JavaScript.
-  <li>Teamwork for the development of complex projects.</li>
-  <li>Participation in the company's marketing and SEO strategy.</li>
-</ul>
-
-<h2>Education</h2>
-<h3> May 2023 </h3>
-<ul><li><a href="https://4geeks.com/ "> 4GeeksAcademy</a> - Full Stack Software Developer </li>
-</ul>
+I am a full-stack developer with a focus on web and mobile development. I also have experience in marketing and SEO, and I am familiar with the latest technological trends.<br><br>I am a motivated and team-oriented professional, with a strong commitment to quality and excellence. I have a great ability to learn and adapt, and I am always willing to take on new challenges.
 
 <h2>🌟 Top Skils 🌟</h2>
 <ul>
@@ -26,7 +14,7 @@ I am a full-stack developer with 2 years of experience, with a focus on web and 
 <li>Marketing: SEO, SEM, PPC, email marketing</li>
 </ul>
 
-<h2>Contacto</h2>
+<h2>Contact</h2>
 Portfolio : https://jerangel1.github.io/Portfolio/<br>
 Mail 📧 : Jerangel1691@gmail.com
 <br><br>
