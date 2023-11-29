@@ -1,7 +1,7 @@
 <div align="center">
 <h1 align="center">Hi 👋, i am ...  </h1>
 </div>
-<a href="https://www.linkedin.com/in/jerangel1"><img src="./Green Minimalist Video Game Developer Studio Logo.gif"></a>
+<a href="https://www.linkedin.com/in/jerangel1"><img src="./Green Minimalist Video Game Developer Studio Logo(1).gif"></a>
 A full-stack developer with a focus on web and mobile development. I also have experience in marketing and SEO, and I am familiar with the latest technological trends.<br><br>I am a motivated and team-oriented professional, with a strong commitment to quality and excellence. I have a great ability to learn and adapt, and I am always willing to take on new challenges.
 
 <h2>🌟 Top Skils 🌟</h2>
