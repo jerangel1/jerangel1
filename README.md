@@ -1,7 +1,7 @@
 <div align="center">
 <h1 align="center">Hi, i am <a href="https://www.linkedin.com/in/jerangel1">Jesús Rangel</a> 👋</h1>
 </div>
-<img src="">
+<img src="./Green Minimalist Video Game Developer Studio Logo.gif">
 # ⌨ About Me ...
 
 
