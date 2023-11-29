@@ -2,9 +2,6 @@
 <h1 align="center">Hi, i am <a href="https://www.linkedin.com/in/jerangel1">Jesús Rangel</a> 👋</h1>
 </div>
 <img src="./Green Minimalist Video Game Developer Studio Logo.gif">
-# ⌨ About Me ...
-
-
 I am a full-stack developer with a focus on web and mobile development. I also have experience in marketing and SEO, and I am familiar with the latest technological trends.<br><br>I am a motivated and team-oriented professional, with a strong commitment to quality and excellence. I have a great ability to learn and adapt, and I am always willing to take on new challenges.
 
 <h2>🌟 Top Skils 🌟</h2>
