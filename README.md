@@ -1,8 +1,8 @@
 <div align="center">
-<h1 align="center">Hi, i am <a href="https://www.linkedin.com/in/jerangel1">Jesús Rangel</a> 👋</h1>
+<h1 align="center">Hi 👋, i am ...  </h1>
 </div>
-<img src="./Green Minimalist Video Game Developer Studio Logo.gif">
-I am a full-stack developer with a focus on web and mobile development. I also have experience in marketing and SEO, and I am familiar with the latest technological trends.<br><br>I am a motivated and team-oriented professional, with a strong commitment to quality and excellence. I have a great ability to learn and adapt, and I am always willing to take on new challenges.
+<a href="https://www.linkedin.com/in/jerangel1"><img src="./Green Minimalist Video Game Developer Studio Logo.gif"></a>
+A full-stack developer with a focus on web and mobile development. I also have experience in marketing and SEO, and I am familiar with the latest technological trends.<br><br>I am a motivated and team-oriented professional, with a strong commitment to quality and excellence. I have a great ability to learn and adapt, and I am always willing to take on new challenges.
 
 <h2>🌟 Top Skils 🌟</h2>
 <ul>
@@ -36,7 +36,9 @@ Mail 📧 : Jerangel1691@gmail.com
 
 </div>
 
-# 📊 GitHub Stats:
+<div align="center">
+
+# 📊 GitHub Stats
 ![](https://github-readme-stats.vercel.app/api?username=jerangel1&theme=dracula&hide_border=false&include_all_commits=true&count_private=false)
 ![](https://github-readme-streak-stats.herokuapp.com/?user=jerangel1&theme=dracula&hide_border=false)</br></br>
 
@@ -44,6 +46,7 @@ Mail 📧 : Jerangel1691@gmail.com
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=jerangel1&limit=5&theme=dracula&combine_all_yearly_contributions=true)
 
+</div>
 
 ---
 [![](https://visitcount.itsvg.in/api?id=jerangel1&icon=0&color=0)](https://visitcount.itsvg.in)
