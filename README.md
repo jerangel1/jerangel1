@@ -49,7 +49,7 @@ Mail 📧 : Jerangel1691@gmail.com
 
 # 📊 GitHub Stats
 ![](https://github-readme-stats.vercel.app/api?username=jerangel1&theme=dracula&hide_border=false&include_all_commits=true&count_private=false)
-</br>
+</br></br>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=jerangel1&theme=dracula&hide_border=false)</br></br>
 
 
