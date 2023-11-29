@@ -20,11 +20,20 @@ A full-stack developer with a focus on web and mobile development. I also have e
 <h2>Contact</h2>
 Portfolio : https://jerangel1.github.io/Portfolio/<br>
 Mail 📧 : Jerangel1691@gmail.com
-<br><br>
-<i>If you are looking for a full-stack developer with experience in marketing and SEO, please do not hesitate to contact me. I am confident that I can add great value to your team.</i>
-
+<br>
+<div align="center">
+  
 ## 🌐 Socials
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/Jerangel1) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Jerangel1) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/Jerangel1) 
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/@Jerangel1) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Jerangel1) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/u/Miserable_Ocelot2768) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/22323643) [![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@@Jerangel91) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/@Jerangel1) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@@Jerangel16) [![Codepen](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/@jerangel1) 
+
+</div>
+
+<hr>
+<div align="center">
+<i>If you are looking for a full-stack developer with experience in marketing and SEO, please do not hesitate to contact me. </br>I am confident that I can add great value to your team.</i>
+</div>
+<hr>
+
 
 <div align="center">
 
@@ -49,6 +58,9 @@ Mail 📧 : Jerangel1691@gmail.com
 </div>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=jerangel1&icon=0&color=0)](https://visitcount.itsvg.in)
+<div align="right">
+  
+😎[![](https://visitcount.itsvg.in/api?id=jerangel1&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+</div>
+
