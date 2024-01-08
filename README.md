@@ -18,7 +18,7 @@ A full-stack developer with a focus on web and mobile development. I also have e
 </ul>
 
 <h2>Contact</h2>
-Portfolio : https://jerangel1.github.io/Portfolio/<br>
+Portfolio : https://jerangel-devfolio.vercel.app/<br>
 Mail 📧 : Jerangel1691@gmail.com
 <br>
 <div align="center">
