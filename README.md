@@ -12,7 +12,7 @@ A full-stack developer with a focus on web and mobile development. I also have e
 
 <li>Databases: MySQL, PostgreSQL, MongoDB </li>
 
-<li>Development Tools: Git, GitHub, Jira </li>
+<li>Development Tools: Git, GitHub, Jira , Tailwindcss, Figma , Wordpress </li>
 
 <li>Marketing: SEO, SEM, PPC, email marketing</li>
 </ul>
