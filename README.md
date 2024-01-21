@@ -6,9 +6,9 @@ A full-stack developer with a focus on web and mobile development. I also have e
 
 <h2>🌟 Top Skils 🌟</h2>
 <ul>
-<li>Programming Languages: JavaScript, Python, CSS, Angular</li>
+<li>Programming Languages: JavaScript,Typescript, Python, PHP</li>
 
-<li>Frameworks: React, Node.js, Bootstrap, Flask, Angular</li>
+<li>Frameworks:Next.js,React, Node.js, Bootstrap, Flask, Angular</li>
 
 <li>Databases: MySQL, PostgreSQL, MongoDB </li>
 
@@ -18,7 +18,7 @@ A full-stack developer with a focus on web and mobile development. I also have e
 </ul>
 
 <h2>Contact</h2>
-Portfolio : https://jerangel-devfolio.vercel.app/<br>
+<a href="https://jesus-rangel.com/">Portfolio</a>  <br>
 Mail 📧 : Jerangel1691@gmail.com
 <br>
 <div align="center">
