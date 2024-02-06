@@ -8,13 +8,13 @@ A full-stack developer with a focus on web and mobile development. I also have e
 <ul>
 <li>Programming Languages: JavaScript,Typescript, Python, PHP</li>
 
-<li>Frameworks:Next.js,React, Node.js, Bootstrap, Flask, Angular</li>
+<li>Frameworks:Next.js,React,Vue, Node.js, Bootstrap, Flask, Angular</li>
 
 <li>Databases: MySQL, PostgreSQL, MongoDB </li>
 
 <li>Development Tools: Git, GitHub, Jira , Tailwindcss, Figma , Wordpress </li>
 
-<li>Marketing: SEO, SEM, PPC, email marketing</li>
+<li>Marketing: SEO, SEM, PPC, Email marketing</li>
 </ul>
 
 <h2>Contact</h2>
