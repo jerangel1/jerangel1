@@ -6,7 +6,7 @@ A full-stack developer with a focus on web and mobile development. I also have e
 
 <h2>🌟 Top Skils 🌟</h2>
 <ul>
-<li>Programming Languages: JavaScript,Typescript, Python, PHP</li>
+<li>Programming Languages: Typescript, Python, PHP and learning dart</li>
 
 <li>Frameworks:Next.js,React,Vue, Node.js, Bootstrap, Flask, Angular</li>
 
