@@ -3,7 +3,7 @@
 </div>
 <div align="right">
   
-[![English](https://img.shields.io/badge/Language-English-blue?style=for-the-badge&logo=markdown)](README_EN.md)
+[![English](https://img.shields.io/badge/Language-English-blue?style=for-the-badge&logo=markdown)](./README_EN.md)
 
 </div>
 
