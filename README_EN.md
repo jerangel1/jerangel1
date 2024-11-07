@@ -4,10 +4,6 @@
 
 </div>
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/jerangel1/jerangel1/main/banner.png" alt="Banner" width="100%" height="auto">
-</div>
-
 # Hi, I'm Jesus Rangel 👋
 
 > Full Stack Developer | Frontend Specialist | Mobile Developer in Training
