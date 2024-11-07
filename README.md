@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/jerangel1/jerangel1/main/banner.png" alt="Banner" width="100%" height="auto">
-</div>
+
 <div align="right">
   
 [![English](https://img.shields.io/badge/Language-English-blue?style=for-the-badge&logo=markdown)](./README_EN.md)
