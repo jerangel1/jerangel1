@@ -7,7 +7,21 @@
 > Desarrollador Full Stack | Especialista Frontend | Desarrollador Móvil en Formación
 
 ### 💫 Sobre Mí
-Desarrollador Full Stack con pasión por crear experiencias web excepcionales. Mi enfoque principal está en el desarrollo frontend, donde combino diseño y funcionalidad para construir interfaces intuitivas y eficientes. Actualmente, estoy expandiendo mis habilidades hacia el desarrollo móvil y la integración de tecnologías modernas.
+
+Desarrollador Full Stack apasionado por crear experiencias web excepcionales, con un enfoque principal en el desarrollo frontend donde combino diseño y funcionalidad para construir interfaces intuitivas y eficientes. 
+
+Mi filosofía de desarrollo se basa en la búsqueda del equilibrio entre la excelencia y la practicidad: creo firmemente en construir soluciones sostenibles y tangibles en lugar de perseguir una perfección inalcanzable. Esta mentalidad me permite entregar productos que no solo funcionan eficientemente, sino que también pueden evolucionar y adaptarse a las necesidades cambiantes.
+
+Actualmente, estoy expandiendo mis horizontes hacia el desarrollo móvil y la integración de tecnologías modernas, siempre manteniendo mi compromiso con el desarrollo pragmático y la mejora continua. Me motiva especialmente crear soluciones que no solo sean técnicamente sólidas, sino también mantenibles y escalables a largo plazo.
+
+**Áreas de enfoque:**
+- 🎯 Desarrollo frontend con énfasis en experiencia de usuario
+- 🔄 Implementación de soluciones escalables y mantenibles
+- 📱 Exploración activa del desarrollo móvil
+- 🛠️ Integración de tecnologías modernas
+- 🤝 Colaboración efectiva en equipos multidisciplinarios
+  
+<div align="center">
 
 ## 🌐 Redes Sociales:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/jerangel1) 
@@ -53,6 +67,7 @@ Desarrollador Full Stack con pasión por crear experiencias web excepcionales. M
 ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=flat&logo=jira&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white)
 ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=flat&logo=Canva&logoColor=white)
+</div>
 
 <div align="center">
 
@@ -66,7 +81,7 @@ Desarrollador Full Stack con pasión por crear experiencias web excepcionales. M
 
 ---
 
-<i>"El código limpio no se escribe siguiendo reglas, se escribe intentando ser un artesano del software." - Robert C. Martin</i>
+<i>"El código limpio no se escribe siguiendo reglas, se escribe intentando hacerlo mejor cada dia" </i>
 
 [![](https://visitcount.itsvg.in/api?id=jerangel1&icon=0&color=1)](https://visitcount.itsvg.in)
 
