@@ -77,10 +77,8 @@ Actualmente, estoy expandiendo mis horizontes hacia el desarrollo móvil y la in
 # 📊 Estadísticas de GitHub
 ![](https://github-readme-stats.vercel.app/api?username=jerangel1&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
 ![](https://github-readme-streak-stats.herokuapp.com/?user=jerangel1&theme=dark&hide_border=false)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=jerangel1&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-### 🔝 Repositorios con Más Contribuciones
-![](https://github-contributor-stats.vercel.app/api?username=jerangel1&limit=5&theme=dark&combine_all_yearly_contributions=true)
+<a href="https://app.daily.dev/jerangel1"><img src="https://api.daily.dev/devcards/v2/FjFMiklfsV9KDnkYSmhNP.png?r=zur&type=default" width="356" alt="Jesús Rangel's Dev Card"/></a>
 
 ---
 
