@@ -1,89 +1,65 @@
-
-<div align="right">
+<div align="center">
   
 [![English](https://img.shields.io/badge/Language-English-blue?style=for-the-badge&logo=markdown)](./README_EN.md)
 
-</div>
+<img src="https://betsol-web.s3.us-east-2.amazonaws.com/laptop-with-glowing-screen-table-dark-top-view-copy-space.jpg" width="100%" alt="Banner" />
 
-# Hola, soy Jesus Rangel 👋
+<p align="center">
+  <b>Frontend especialista | Backend competente | Móvil en progreso</b>
+</p>
 
-> Desarrollador Full Stack | Especialista Frontend | Desarrollador Móvil en Formación
+<p align="center">
+  <a href="https://linkedin.com/in/jerangel1"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://x.com/jerangel1"><img src="https://img.shields.io/badge/-Twitter-000000?style=flat-square&logo=x&logoColor=white" alt="Twitter" /></a>
+</p>
 
-### 💫 Sobre Mí
+<p align="center">
+  Desarrollador con enfoque en experiencias web excepcionales. Filosofía: <b>equilibrio entre excelencia y practicidad</b>.
+</p>
 
-Desarrollador Full Stack apasionado por crear experiencias web excepcionales, con un enfoque principal en el desarrollo frontend donde combino diseño y funcionalidad para construir interfaces intuitivas y eficientes. 
+<!-- Tech Stack -->
+<h2 align="center">Tecnologías</h2>
 
-Mi filosofía de desarrollo se basa en la búsqueda del equilibrio entre la excelencia y la practicidad: creo firmemente en construir soluciones sostenibles y tangibles en lugar de perseguir una perfección inalcanzable. Esta mentalidad me permite entregar productos que no solo funcionan eficientemente, sino que también pueden evolucionar y adaptarse a las necesidades cambiantes.
-
-Actualmente, estoy expandiendo mis horizontes hacia el desarrollo móvil y la integración de tecnologías modernas, siempre manteniendo mi compromiso con el desarrollo pragmático y la mejora continua. Me motiva especialmente crear soluciones que no solo sean técnicamente sólidas, sino también mantenibles y escalables a largo plazo.
-
-**Áreas de enfoque:**
-- 🎯 Desarrollo frontend con énfasis en experiencia de usuario
-- 🔄 Implementación de soluciones escalables y mantenibles
-- 📱 Exploración activa del desarrollo móvil
-- 🛠️ Integración de tecnologías modernas
-- 🤝 Colaboración efectiva en equipos multidisciplinarios
-  
-<div align="center">
-
-## 🌐 Redes Sociales:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/jerangel1) 
-[![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/jerangel1)
-
-# 💻 Stack Tecnológico:
-
-### Lenguajes y Frameworks
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
-![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=flat&logo=php&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
-![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=flat&logo=Flutter&logoColor=white)
-![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
-
-### Frontend y Estilos
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white)
-![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=flat&logo=styled-components&logoColor=white)
-![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=flat&logo=react%20query&logoColor=white)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=react-router&logoColor=white)
-![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=flat&logo=reacthookform&logoColor=white)
-
-### Backend y Bases de Datos
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=flat&logo=express&logoColor=%2361DAFB)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat&logo=flask&logoColor=white)
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=flat&logo=redis&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
-
-### Cloud y Deployment
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
-![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat&logo=vercel&logoColor=white)
-![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=flat&logo=netlify&logoColor=#00C7B7)
-![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=flat&logo=firebase)
-
-### Herramientas de Desarrollo
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=flat&logo=githubactions&logoColor=white)
-![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=flat&logo=jira&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=flat&logo=Canva&logoColor=white)
-</div>
+<table>
+  <tr>
+    <td valign="top" width="33%">
+      <h3 align="center"><img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" height="28" /></h3>
+      <div align="center">
+        <h4>Frontend</h4>
+        <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind" alt="Frontend Skills" />
+        <h4>Backend</h4>
+        <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs" alt="Backend Skills" />
+        <h4>Móvil</h4>
+        <img src="https://skillicons.dev/icons?i=react" alt="Mobile Skills" />
+      </div>
+    </td>
+    <td valign="top" width="33%">
+      <h3 align="center"><img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" height="28" /></h3>
+      <div align="center">
+        <h4>Backend</h4>
+        <img src="https://skillicons.dev/icons?i=fastapi,django,flask" alt="Python Skills" />
+        <h4>Otros</h4>
+        <img src="https://img.shields.io/badge/Odoo-714B67?style=flat-square&logo=odoo&logoColor=white" alt="Odoo" height="25" />
+      </div>
+    </td>
+    <td valign="top" width="33%">
+      <h3 align="center"><img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" height="28" /></h3>
+      <div align="center">
+        <h4>Backend</h4>
+        <img src="https://skillicons.dev/icons?i=spring,maven" alt="Java Skills" />
+      </div>
+    </td>
+  </tr>
+</table>
 
 <div align="center">
+  <h3>Infraestructura</h3>
+  <img src="https://skillicons.dev/icons?i=docker,aws,firebase,mongodb,postgres,mysql,githubactions,jenkins" alt="Infrastructure Skills" />
+</div>
 
-# 📊 Estadísticas de GitHub
-![](https://github-readme-stats.vercel.app/api?username=jerangel1&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
-![](https://github-readme-streak-stats.herokuapp.com/?user=jerangel1&theme=dark&hide_border=false)
-
-<a href="https://app.daily.dev/jerangel1"><img src="https://api.daily.dev/devcards/v2/FjFMiklfsV9KDnkYSmhNP.png?r=zur&type=default" width="356" alt="Jesús Rangel's Dev Card"/></a>
-
----
-
-<i>"El código limpio no se escribe siguiendo reglas, se escribe intentando hacerlo mejor cada dia" </i>
-
-[![](https://visitcount.itsvg.in/api?id=jerangel1&icon=0&color=1)](https://visitcount.itsvg.in)
+<br>
+<div align="center">
+  <i>"Si debuggear es el proceso de eliminar errores, entonces programar debe ser el proceso de ponerlos."</i>
+</div>
 
 </div>
