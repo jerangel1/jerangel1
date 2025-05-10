@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  <img src="https://i.imgur.com/rDfxm5t.gif" width="100%" alt="Banner Animado" />
+  <img src="./bannerJesusRangel.gif" width="100%" alt="Banner Animado" />
 </div>
 
 ## Stack Tecnológico
