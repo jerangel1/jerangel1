@@ -71,16 +71,6 @@ Currently, I'm expanding my horizons towards mobile development and modern techn
   </tr>
 </table>
 
-<div align="center">
-
-# 📊 GitHub Stats
-![](https://github-readme-stats.vercel.app/api?username=jerangel1&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
-![](https://github-readme-streak-stats.herokuapp.com/?user=jerangel1&theme=dark&hide_border=false)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=jerangel1&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
-### 🔝 Top Contributing Repositories
-![](https://github-contributor-stats.vercel.app/api?username=jerangel1&limit=5&theme=dark&combine_all_yearly_contributions=true)
-
 <p><i>"Clean code is not written by following rules, it's written by trying to make it better every day"</i></p>
 
 [![](https://visitcount.itsvg.in/api?id=jerangel1&icon=0&color=1)](https://visitcount.itsvg.in)
