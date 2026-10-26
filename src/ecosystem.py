@@ -22,13 +22,20 @@ WHITE, MUTED = "#f2efe8", "#a7a59e"
 LIME, BLUE = "#c6f432", "#3d7bff"
 
 LAYERS = [
-    ("01", "Frontend", ["React", "Next.js", "TypeScript", "Tailwind"]),
-    ("02", "Backend", ["Python", "Django", "FastAPI", "Java", "Spring Boot", "Node.js"]),
-    ("03", "Data", ["PostgreSQL", "Redis", "Prisma", "Alembic"]),
-    ("04", "Cloud", [("AWS", ["ECS", "RDS", "S3", "Lambda", "SQS"]), ("AZURE", ["Container Apps", "Functions", "Key Vault"])]),
+    ("01", "Frontend", [("WEB", ["React", "Next.js", "TypeScript", "Mantine", "Radix UI", "Tailwind", "TanStack", "Astro"]),
+                        ("MOBILE", ["React Native", "Expo", "Tamagui", "Reanimated", "Skia"])]),
+    ("02", "Backend", [("PYTHON", ["FastAPI", "Django", "Celery", "SQLModel"]),
+                       ("NODE", ["Node.js", "Fastify", "Bun"]),
+                       ("GO", ["Fiber", "Huma", "Goroutines", "Channels"]),
+                       ("REALTIME", ["WebSockets", "Socket.IO", "Asterisk AMI", "SIP.js"]),
+                       ("JAVA", ["Spring Boot"])]),
+    ("03", "Data", ["PostgreSQL", "Redis", "Valkey", "Prisma", "SQLAlchemy", "pgx", "Alembic", "MinIO"]),
+    ("04", "Cloud", [("AWS", ["ECS", "RDS", "S3", "Lambda", "SQS", "SES", "CloudWatch"]),
+                     ("AZURE", ["Container Apps", "Functions", "Key Vault", "Front Door", "App Service"])]),
 ]
 AI_TOOLS = ["Claude Code", "Codex", "Azure OpenAI", "LangChain", "Ollama"]
-DEVOPS = ["Docker", "Linux", "Nginx", "CI/CD"]
+VOICE_AI = ["Vapi", "Deepgram", "ElevenLabs", "Whisper", "Twilio"]
+DEVOPS = ["Docker", "Linux", "GitHub Actions", "OpenTofu", "Sentry", "Prometheus", "OpenTelemetry", "SonarQube"]
 
 # Per-language copy. caps: (num, title, items, index of the layer whose passage lights it up).
 # notes: editorial annotations in the gap after a layer; `secure` sits under the side cards.
@@ -36,7 +43,7 @@ COPY = {
     "en": {
         "layers": LAYERS,
         "caps": [
-            ("05", "AI Engineering", [("BUILD", ["Model integration", "MCP integration", "Multi-agent orchestration"]), ("TOOLS", AI_TOOLS)], 1),
+            ("05", "AI Engineering", [("BUILD", ["Model integration", "MCP integration", "Multi-agent orchestration"]), ("VOICE", VOICE_AI), ("TOOLS", AI_TOOLS)], 1),
             ("06", "Architecture & Security", ["System Design", "API Design", "OWASP", "Observability", "Row-Level Security", "Secrets Management"], 2),
             ("07", "DevOps", DEVOPS, 3),
         ],
@@ -49,9 +56,10 @@ COPY = {
         "label": ("Engineering ecosystem. A request flows through ", ", then ", ". Cross-cutting: "),
     },
     "es": {
-        "layers": [("01", "Frontend", LAYERS[0][2]), ("02", "Backend", LAYERS[1][2]), ("03", "Datos", LAYERS[2][2]), ("04", "Cloud", LAYERS[3][2])],
+        "layers": [("01", "Frontend", [("WEB", LAYERS[0][2][0][1]), ("MÓVIL", LAYERS[0][2][1][1])]),
+                   ("02", "Backend", [("TIEMPO REAL", g[1]) if g[0] == "REALTIME" else g for g in LAYERS[1][2]]), ("03", "Datos", LAYERS[2][2]), ("04", "Cloud", LAYERS[3][2])],
         "caps": [
-            ("05", "Ingeniería de IA", [("CREO", ["Integración de modelos", "Integración MCP", "Orquestación multiagente"]), ("USO", AI_TOOLS)], 1),
+            ("05", "Ingeniería de IA", [("CREO", ["Integración de modelos", "Integración MCP", "Orquestación multiagente"]), ("VOZ", VOICE_AI), ("USO", AI_TOOLS)], 1),
             ("06", "Arquitectura y Seguridad", ["Diseño de sistemas", "Diseño de APIs", "OWASP", "Observabilidad", "Seguridad por fila", "Gestión de secretos"], 2),
             ("07", "DevOps", DEVOPS, 3),
         ],
