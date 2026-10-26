@@ -282,14 +282,22 @@ def chapter(c):
 </svg>'''
 
 
+# LinkedIn "in" mark (Simple Icons, CC0), 24x24 units.
+LINKEDIN = ("M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046"
+            "c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 "
+            "2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 "
+            "0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z")
+
+
 def cta(c):
-    """The LinkedIn button. Width follows the label so the arrow never collides with it."""
+    """The LinkedIn button: logo, label, arrow. Width follows the label so the arrow never collides with it."""
     text_w = len(c["cta"]) * 11.6
-    w = text_w + 104
+    w = text_w + 144
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w:.0f}" height="64" viewBox="0 0 {w:.0f} 64" role="img" aria-label="{escape(c["cta"])}">'
             f'<title>{escape(c["cta"])}</title><style>{font_faces()}</style>'
             f'<rect width="{w:.0f}" height="64" rx="32" fill="{LIME}"/>'
-            f'<text x="32" y="40" font-family="Archivo, \'Helvetica Neue\', Arial, sans-serif" font-size="20" font-weight="700" fill="{CHARCOAL}">{escape(c["cta"])}</text>'
+            f'<path transform="translate(28,18) scale({28 / 24:.4f})" d="{LINKEDIN}" fill="{CHARCOAL}"/>'
+            f'<text x="70" y="40" font-family="Archivo, \'Helvetica Neue\', Arial, sans-serif" font-size="20" font-weight="700" fill="{CHARCOAL}">{escape(c["cta"])}</text>'
             f'<path d="M{w - 58:.0f} 32h22m-8-8 8 8-8 8" fill="none" stroke="{CHARCOAL}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>')
 
 
