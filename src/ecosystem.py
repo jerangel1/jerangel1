@@ -152,6 +152,15 @@ def glow(x, y, w, h, fs, at, color, animated):
             f'keyTimes="{kt(0, at - 0.3, at, at + 1.0, at + 1.6, READY_END - 0.4, READY_END, CYCLE)}" dur="{CYCLE}s" repeatCount="indefinite"/></rect>')
 
 
+def flash(x, y, w, h, fs, color):
+    """Final beat: every box flares at once when the request has landed on the last one."""
+    at = TRAVEL_END + 0.35
+    return (f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" rx="{fs*0.8:.1f}" fill="{color}" fill-opacity="0.07" '
+            f'stroke="{color}" stroke-width="3" opacity="0">'
+            f'<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="{kt(0, at, at + 0.12, at + 0.9, CYCLE)}" '
+            f'dur="{CYCLE}s" repeatCount="indefinite"/></rect>')
+
+
 def note(x, y, text, at, animated, anchor="start"):
     return fade(f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{anchor}" class="note">{escape(text)}</text>', at, READY_END, animated)
 
@@ -179,6 +188,7 @@ def request(boxes, cards, caps, x0, col, fs, wide):
         spot = 0.78 if wide or i % 2 == 0 else 0.5
         stops.append((bx + bw * spot, by - r, land, land + slot * 0.4))
         out.append(glow(bx, by, bw, bh, fs, land, color, True))
+        out.append(flash(bx, by, bw, bh, fs, color))
     return "".join(out) + ball(stops, CYCLE, r, LIME, TRAVEL_START - 0.4, TRAVEL_END + 0.8, lift=fs * 3,
                                 ceiling=boxes[0][0] - fs)
 
