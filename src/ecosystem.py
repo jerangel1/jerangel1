@@ -13,6 +13,9 @@ groups, drawn as labelled rows.
 import base64
 import pathlib
 import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+from bounce import ball  # noqa: E402
 from xml.sax.saxutils import escape
 
 FONTS, OUT = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
@@ -153,6 +156,33 @@ def note(x, y, text, at, animated, anchor="start"):
     return fade(f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{anchor}" class="note">{escape(text)}</text>', at, READY_END, animated)
 
 
+def request(boxes, cards, caps, x0, col, fs, wide):
+    """The request hops from box to box, landing on each top edge; every box glows as it lands.
+
+    Wide: it zigzags between the spine and the capability each layer leans on.
+    Narrow: everything is stacked, so it hops straight down, alternating sides.
+    """
+    spine = [(x0, by, col, bh, LIME) for by, bh in boxes]
+    side = [(cx, cy, cw, ch, BLUE) for cx, cy, cw, ch in cards]
+    if wide:
+        order = []
+        for k, layer in enumerate(spine):
+            order.append(layer)
+            order += [side[i] for i, cap in enumerate(caps) if cap[3] == k]
+    else:
+        order = spine + side
+    r = fs * 0.5
+    slot = (TRAVEL_END - TRAVEL_START) / (len(order) - 1)
+    stops, out = [], []
+    for i, (bx, by, bw, bh, color) in enumerate(order):
+        land = TRAVEL_START + i * slot
+        spot = 0.78 if wide or i % 2 == 0 else 0.5
+        stops.append((bx + bw * spot, by - r, land, land + slot * 0.4))
+        out.append(glow(bx, by, bw, bh, fs, land, color, True))
+    return "".join(out) + ball(stops, CYCLE, r, LIME, TRAVEL_START - 0.4, TRAVEL_END + 0.8, lift=fs * 3,
+                                ceiling=boxes[0][0] - fs)
+
+
 def build(layout, animated, c):
     wide = layout == "wide"
     W = 1000 if wide else 600
@@ -184,30 +214,8 @@ def build(layout, animated, c):
         gy = boxes[after][0] + boxes[after][1] + gap / 2 + fs * 0.35
         under.append(note(cx + fs * 1.1, gy, text, 1.8, animated))
 
-    # The request: dwells in each layer, then moves on. arrivals[k] = when it reaches layer k.
-    stops = [by + bh / 2 for by, bh in boxes]
-    leg_t = (TRAVEL_END - TRAVEL_START) / (len(stops) - 1)
-    arrivals = [TRAVEL_START + k * leg_t for k in range(len(stops))]
-    if animated:
-        span = stops[-1] - stops[0]
-        kp, ktimes = [0.0], [0.0]
-        for k in range(1, len(stops)):
-            t0 = arrivals[k - 1]
-            kp += [(stops[k - 1] - stops[0]) / span, (stops[k] - stops[0]) / span]
-            ktimes += [t0 + leg_t * 0.55, t0 + leg_t]
-        kp.append(kp[-1])
-        ktimes.append(CYCLE)
-        path = f"M{cx:.1f} {stops[0]:.1f}V{stops[-1]:.1f}"
-        parts.append(
-            f'<circle r="6" fill="{LIME}" opacity="0">'
-            f'<animateMotion path="{path}" dur="{CYCLE}s" repeatCount="indefinite" calcMode="linear" '
-            f'keyPoints="{";".join(f"{p:.4f}" for p in kp)}" keyTimes="{kt(*ktimes)}"/>'
-            f'<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="{kt(0, TRAVEL_START - 0.2, TRAVEL_START, TRAVEL_END + 0.6, TRAVEL_END + 1.0, CYCLE)}" '
-            f'dur="{CYCLE}s" repeatCount="indefinite"/></circle>')
-        for k, (by, bh) in enumerate(boxes):
-            parts.append(glow(x0, by, col, bh, fs, arrivals[k], LIME, animated))
-
-    # Cross-cutting capabilities: each one lights up when the request reaches the layer that leans on it.
+    # Cross-cutting capabilities sit beside the spine (wide) or below it (narrow).
+    cards = []  # (x, y, w, h) of each capability card
     if wide:
         sx = x0 + col + 48
         rail_x = sx - 24
@@ -217,7 +225,7 @@ def build(layout, animated, c):
             g, h = box(num, title, items, sx, cy, side_w, fs, accent=BLUE)
             side.append((cy, h))
             parts.append(fade(g, APPEAR + 1.2 + i * 0.3, READY_END, animated))
-            parts.append(glow(sx, cy, side_w, h, fs, arrivals[layer] + 0.3, BLUE, animated))
+            cards.append((sx, cy, side_w, h))
             cy += h + 16
         rail_bottom = max(spine_bottom, cy - 16)
         under.append(fade(
@@ -236,10 +244,13 @@ def build(layout, animated, c):
         for i, (num, title, items, layer) in enumerate(c["caps"]):
             g, h = box(num, title, items, x0, y, inner, fs, accent=BLUE)
             parts.append(fade(g, APPEAR + 1.2 + i * 0.3, READY_END, animated))
-            parts.append(glow(x0, y, inner, h, fs, arrivals[layer] + 0.3, BLUE, animated))
+            cards.append((x0, y, inner, h))
             y += h + 16
         under.append(note(W - m, y + fs * 0.9, c["secure"], 1.8, animated, anchor="end"))
         bottom = y + fs * 1.3
+
+    if animated:
+        parts.append(request(boxes, cards, c["caps"], x0, col, fs, wide))
 
     H = bottom + m
     # Header: the subtitle gives way to SYSTEM READY once the request has crossed every layer.

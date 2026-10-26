@@ -3,14 +3,18 @@
 Usage: python3 -I hero.py <fonts_dir> <out_dir>
 
 The hero is a blueprint elevation: an arch cut into the four layers a request
-crosses. A request enters at the top, pauses in each layer while that layer's
-job lights up, and leaves with a 200 OK. Everything except the moving parts is
-visible at rest, so the static build and the first frame read the same.
+crosses. A request is tossed in at the top and hops down floor by floor, each
+layer's job lighting up as it lands, and leaves with a 200 OK. On load the name
+rises in and the tagline types itself out, once; the static build shows
+everything at rest.
 """
 import base64
 import pathlib
 import sys
 from xml.sax.saxutils import escape
+
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+from bounce import ball  # noqa: E402
 
 FONTS, OUT = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
 
@@ -124,24 +128,12 @@ def blueprint(ox, oy, s, fs, animated, uid, c, labels):
     out.append(f'<path d="M-30 -10H-2M-30 -10V18" fill="none" stroke="{LIME}" stroke-width="3"/>')
 
     if animated:
-        # The request itself: drops in, dwells in each band, leaves through the floor.
-        stops = [ENTRY] + [((t + b) / 2 + (40 if i == 0 else 0)) for i, (t, b) in enumerate(BANDS)] + [FLOOR + 10]
-        span = stops[-1] - stops[0]
-        kp, ktimes = [0.0, 0.0], [0.0, 0.6]
-        for i, a in enumerate(ARRIVE):
-            kp += [(stops[i + 1] - stops[0]) / span] * 2
-            ktimes += [a, a + DWELL]
-        kp += [1.0, 1.0]
-        ktimes += [EXIT, CYCLE]
-        out.append(f'<circle r="8" fill="{LIME}" opacity="0">'
-                   f'<animateMotion path="M{cx} {stops[0]}V{stops[-1]}" dur="{CYCLE}s" repeatCount="indefinite" calcMode="linear" '
-                   f'keyPoints="{";".join(f"{p:.4f}" for p in kp)}" keyTimes="{kt(*ktimes)}"/>{pulse_opacity(0.6, EXIT - 0.2)}</circle>')
-        out.append(f'<circle r="8" fill="none" stroke="{LIME}" stroke-width="2" opacity="0">'
-                   f'<animateMotion path="M{cx} {stops[0]}V{stops[-1]}" dur="{CYCLE}s" repeatCount="indefinite" calcMode="linear" '
-                   f'keyPoints="{";".join(f"{p:.4f}" for p in kp)}" keyTimes="{kt(*ktimes)}"/>'
-                   f'<animate attributeName="r" values="8;22;8" dur="1.2s" repeatCount="indefinite"/>'
-                   f'<animate attributeName="stroke-opacity" values="0.8;0;0.8" dur="1.2s" repeatCount="indefinite"/>'
-                   f'{pulse_opacity(0.6, EXIT - 0.2)}</circle>')
+        # The request itself: tossed in, hops down landing on each floor, leaves after the last.
+        r = 8
+        stops = [(cx, ENTRY + 40, 0.6, 0.6)]
+        for i, (a, (_, bottom)) in enumerate(zip(ARRIVE, BANDS)):
+            stops.append((ARCH_W * (0.7 if i % 2 else 0.52), bottom - r, a, a + DWELL * 0.6))
+        out.append(ball(stops, CYCLE, r, LIME, 0.6, EXIT - 0.2, lift=36))
     out.append("</g>")
     return "".join(out)
 
@@ -164,20 +156,49 @@ def role_svg(role, x, y, size=None):
     return f'<text x="{x}" y="{y}" class="role"{style}>{sep.join(escape(p) for p in parts)}</text>'
 
 
+def rise(content, delay, animated):
+    """Fades and slides `content` up into place once, `delay` seconds after load."""
+    if not animated:
+        return content
+    return (f'<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="{delay}s" dur="0.7s" fill="freeze"/>'
+            f'<animateTransform attributeName="transform" type="translate" from="0 28" to="0 0" begin="{delay}s" dur="0.7s" '
+            f'calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1" fill="freeze"/>{content}</g>')
+
+
+def typed(text, x, y, size, animated, uid, begin=1.4, per_char=0.045):
+    """The tagline types itself out once, then a cursor keeps blinking after it."""
+    line = f'<text x="{x}" y="{y}" class="tag" style="font-size:{size}px">{escape(text)}</text>'
+    if not animated:
+        return line
+    adv = size * 0.6  # IBM Plex Mono advance
+    widths = ";".join(f"{adv * n:.1f}" for n in range(len(text) + 1))
+    xs = ";".join(f"{x + adv * n + 4:.1f}" for n in range(len(text) + 1))
+    dur = per_char * len(text)
+    return (f'<clipPath id="type{uid}"><rect x="{x - 4}" y="{y - size}" height="{size * 1.6:.0f}" width="0">'
+            f'<animate attributeName="width" values="{widths}" calcMode="discrete" begin="{begin}s" dur="{dur:.2f}s" fill="freeze"/></rect></clipPath>'
+            f'<g clip-path="url(#type{uid})">{line}</g>'
+            f'<rect x="{x + 4}" y="{y - size * 0.82:.1f}" width="{adv * 0.55:.1f}" height="{size:.0f}" fill="{LIME}">'
+            f'<animate attributeName="x" values="{xs}" calcMode="discrete" begin="{begin}s" dur="{dur:.2f}s" fill="freeze"/>'
+            f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/></rect>')
+
+
 def hero(layout, animated, c, labels):
     wide = layout == "wide"
     if wide:
         W, H = 1600, 560
-        text = (f'<text x="96" y="118" class="eyebrow">01 · JERANGEL1</text>'
-                f'<text x="90" y="232" class="name">{NAME[0]}</text><text x="90" y="334" class="name">{NAME[1]}</text>'
-                + role_svg(c["role"], 96, 400) + f'<text x="96" y="450" class="tag">{escape(c["tagline"])}</text>')
+        text = (rise('<text x="96" y="118" class="eyebrow">01 · JERANGEL1</text>', 0.1, animated)
+                + rise(f'<text x="90" y="232" class="name">{NAME[0]}</text>', 0.25, animated)
+                + rise(f'<text x="90" y="334" class="name">{NAME[1]}</text>', 0.45, animated)
+                + rise(role_svg(c["role"], 96, 400), 0.75, animated)
+                + typed(c["tagline"], 96, 450, 21, animated, "w"))
         plan = blueprint(900, 104, 0.8, 18, animated, "w", c, labels)
     else:
         W, H = 800, 1040
-        text = (f'<text x="60" y="80" class="eyebrow" style="font-size:20px">01 · JERANGEL1</text>'
-                f'<text x="54" y="196" class="name" style="font-size:118px">{NAME[0]}</text>'
-                f'<text x="54" y="304" class="name" style="font-size:118px">{NAME[1]}</text>'
-                + role_svg(c["role"], 60, 372, 30) + f'<text x="60" y="420" class="tag" style="font-size:24px">{escape(c["tagline"])}</text>')
+        text = (rise('<text x="60" y="80" class="eyebrow" style="font-size:20px">01 · JERANGEL1</text>', 0.1, animated)
+                + rise(f'<text x="54" y="196" class="name" style="font-size:118px">{NAME[0]}</text>', 0.25, animated)
+                + rise(f'<text x="54" y="304" class="name" style="font-size:118px">{NAME[1]}</text>', 0.45, animated)
+                + rise(role_svg(c["role"], 60, 372, 30), 0.75, animated)
+                + typed(c["tagline"], 60, 420, 24, animated, "n"))
         plan = blueprint(110, 556, 0.8, 24, animated, "n", c, labels)
     grid = (f'<path d="{"".join(f"M{x} 0V{H}" for x in range(0, W, 40))}{"".join(f"M0 {y}H{W}" for y in range(0, H, 40))}" '
             f'stroke="{WHITE}" stroke-opacity="0.035"/>')
