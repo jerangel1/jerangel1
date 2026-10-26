@@ -9,6 +9,8 @@ top of each links to the other.
 | `assets/hero*`, `principles*`, `connect-linkedin*`, `chapter-off-the-clock*`, `language-*` | `hero.py` + `fonts/` | `python3 hero.py fonts ../assets` |
 | `assets/engineering-ecosystem*.svg` | `ecosystem.py` + `fonts/` | `python3 ecosystem.py fonts ../assets` |
 
+Both scripts share `bounce.py`, the request ball that hops between layers, squashes on landing and leaves an impact ring.
+
 ## Engineering ecosystem
 
 Edit `LAYERS` and `COPY` in `ecosystem.py` and run it. It writes four files per language:
